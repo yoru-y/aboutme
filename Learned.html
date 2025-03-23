@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <title>ABOUT ME.</title>
+
+    <!-- CSS OPEN -->
+    <style type="text/css">
+
+      header 
+      { position: relative;
+        height: 500px;    /**  ↓トップ背景画像↓  **/
+        background: url("Media/skysp.JPG")  no-repeat;
+        background-position:bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden; 
+      }
+
+      header .logo-header 
+      { position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 60%;
+        margin: 0 auto; 
+        background-size: contain;
+      }
+
+      @media screen and (max-width: 1000px) 
+        { header .logo-header
+          { top: 45%;
+            width: 70%; }
+        } 
+      @media screen and (max-width: 650px) 
+        { header .logo-header
+          { top: 50%;
+            width: 80%; }
+        } 
+      @media screen and (max-width: 400px) 
+        { header .logo-header
+          { top: 50%;
+            width: 100%; }
+        } 
+      
+
+    </style>
+    <!-- CSS CLOSE -->
+
+  </head>
+  <body>
+
+    <header>
+      <!-- メニューバーOPEN -->
+      <div class="c-header c-hamburger-menu"> <!--↓メニューバーロゴ↓-->
+        <a href="#" class="c-header__logo"><img src="Media/logow.png"></a>
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/>
+        <label for="hamburger" class="c-hamburger-menu__bg"></label>
+        <ul class="c-header__list c-hamburger-menu__list">
+          <li class="c-header__list-item">
+            <a href="AboutMe.html" class="c-header__list-link">Home</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Profile.html" class="c-header__list-link">Profile</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Learned.html" class="c-header__list-link">Learned</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Portfolio.html" class="c-header__list-link">Portfolio</a>
+          </li>
+        </ul>
+        <label for="hamburger" class="c-hamburger-menu__button">
+          <span class="c-hamburger-menu__button-mark"></span>
+          <span class="c-hamburger-menu__button-mark"></span>
+          <span class="c-hamburger-menu__button-mark"></span>
+        </label>
+      </div>
+      <!-- メニューバーCLOSE -->
+
+            <!-- ↓トップロゴ↓ -->
+      <img class="logo-header" src="Media/Learned.png">
+
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="content">
+          <h2 class="hp2" align="center">Learned</h2>
+          <p class="hp3" align="center">ーポリテクセンター長野で<br class="sp">学んだことについてー</p>
+          <h2 class="fi">1月に学んだこと</h2>
+          <p class="hp">1月はビジネススキル講習でした。<br class="sp">グループワークで商品開発&発表<br class="sp">に取り組んだり<br>
+            仕事についての自己理解、<br class="sp">そしてWordやExcelの基本操作<br class="sp">といった内容の講習を<br class="sp">受けました。
+          </p>
+          <p class="hp">講習を受ける中で私が学んだことは、<br class="sp">まず第一に自己理解。<br class="sp">自分がどういった働き方をしたいのか
+            <br>深掘りすることができました。
+          <p class="hp">そして、グループワークではそれぞれの<br class="sp">感じ方や意見の違いによって
+            <br>1人では決して作り上げることが<br class="sp">出来ないものを作る過程を経験しました。
+          </p>
+          <p class="hp">WordやExcelの講習では
+            <br class="sp">今後のPC操作に活きる基礎を<br class="sp">固めることが出来ました。</p>
+          <h2 class="fi">2月に学んだこと</h2>
+          <p class="hp">2月ではHTML、CSS。<br class="sp">そしてJavaScriptの基礎を<br class="sp">
+          学びました。</p>
+          <p class="img-shadow"><img src="Media/html.jpg" alt="html"></p>
+          <p class="hp">それぞれの概念についてであったり、<br class="sp">どう勉強して行けばいいのか<br class="sp">
+            という独学での敷居が高い部分を<br>わかりやすく教えていただけて<br class="sp">ありがたかったです。</p>
+          <p class="hp">『今まで使用できていた言語や<br class="sp">タグが使用できなくなった』<br class="sp">と言った可能性が常に付きまとう<br>
+            変化の激しい業界であることから、<br class="sp">おそらくこの期間で<br class="sp">1番学ぶべきことである<br>
+            "問題にぶつかった際の乗り越え方。"<br class="sp">さらに具体的に言うと<br class="sp">『自分で調べ、学習していく力』の<br>
+            重要性を理解し、学ぶことが<br class="sp">出来たと感じています。</p>
+          <h2 class="fi">3月に学んだこと</h2>
+          <p class="hp">3月初めにはRaspberry Piを<br class="sp">使用したデータベース操作の基本を教わり<br>
+            最終的には自分で正規化の手順を<br class="sp">考えるといった内容を学びました。</p>
+          <p class="img-shadow"><img src="Media/seikika.PNG" alt="seikika"></p>
+          <p class="hp">授業内容は正規化手順を<br class="sp">考えるところまででしたが、
+            個人的に受注明細を確認できる<br>Viewを作成する手順まで<br class="sp">進めることができて楽しかったです。</p>
+          <p class="hp">3月中頃から月末にかけて、<br class="sp">マイコンの回路を組んだり<br class="sp">
+            プログラムを入力したりしました。</p>
+          <p class="img-shadow"><img src="Media/sensor.JPG" alt="ssensor"></p>
+          <p class="hp">この技術を人類を豊かにするために<br class="sp">最初から考え、作った人たちは
+            <br>本当に凄いなと感動しながら<br class="sp">授業に取り組んでいました。<br>
+          学べば学ぶほど凄さがわかり、<br class="sp">学べば学ぶほど自分がいかにまだ何も<br class="sp">
+          理解出来ていないのかがわかるようになってきました。</p>
+          <h2 class="hp3" align="center">Coming soon…</h2>
+          <p class="hp3" align="center">ー更新をお待ちください。ー</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>                          <!--↓topボタン↓-->
+    <a class="top" href="#top"><img src="Media/inu.png" alt="top"></a>
+    <p class="copyright">&copy;ABOUT ME.</p>
+    </div>
+    </footer>
+
+  </body>
+</html>
