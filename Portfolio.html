@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <title>ABOUT ME.</title>
+
+    <!-- CSS OPEN -->
+    <style type="text/css">
+
+      header 
+      { position: relative;
+        height: 500px;    /**  ↓トップ背景画像↓  **/
+        background: url("Media/nightsky.JPG")  no-repeat;
+        background-position:left bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden; 
+      }
+
+      header .logo-header 
+      { position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 60%;
+        margin: 0 auto; 
+        background-size: contain;
+      }
+      @media screen and (max-width: 1000px) 
+        { header .logo-header
+          { top: 45%;
+            width: 70%; }
+        } 
+      @media screen and (max-width: 650px) 
+        { header .logo-header
+          { top: 50%;
+            width: 80%; }
+        } 
+      @media screen and (max-width: 400px) 
+        { header .logo-header
+          { top: 50%;
+            width: 100%; }
+        } 
+
+    </style>
+    <!-- CSS CLOSE -->
+
+  </head>
+  <body>
+
+    <header>
+       <!-- メニューバーOPEN -->
+      <div class="c-header c-hamburger-menu"> <!--↓メニューバーロゴ↓-->
+        <a href="#" class="c-header__logo"><img src="Media/logow.png"></a>
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/>
+        <label for="hamburger" class="c-hamburger-menu__bg"></label>
+        <ul class="c-header__list c-hamburger-menu__list">
+          <li class="c-header__list-item">
+            <a href="AboutMe.html" class="c-header__list-link">Home</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Profile.html" class="c-header__list-link">Profile</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Learned.html" class="c-header__list-link">Learned</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Portfolio.html" class="c-header__list-link">Portfolio</a>
+          </li>
+        </ul>
+        <label for="hamburger" class="c-hamburger-menu__button">
+          <span class="c-hamburger-menu__button-mark"></span>
+          <span class="c-hamburger-menu__button-mark"></span>
+          <span class="c-hamburger-menu__button-mark"></span>
+        </label>
+      </div>
+      <!-- メニューバーCLOSE -->
+
+            <!-- ↓トップロゴ↓ -->
+      <img class="logo-header" src="Media/Portfolio.png">
+
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="content">
+          <h2>Coming soon…</h2>
+          <p>制作次第随時追加予定です。<p>
+        </div>
+      </div>
+    </section>
+
+      <!-- Javascript OPEN -->
+      <script>
+        var logo = document.querySelector('.logo-header');
+            window.addEventListener
+            ('scroll', function() 
+              { var scrolled = window.scrollY;
+                logo.style.transform = "translate(0px," + scrolled/1 +"%)";
+              }
+            );
+  
+        var forEach = function (array, callback)
+         { for (var i = 0; i < array.length; i++) 
+          { callback.call(null, i, array[i]);}
+         };
+      </script>
+      <!-- Javascript CLOSE -->
+
+
+
+
+    <footer>                          <!--↓topボタン↓-->
+    <a class="top" href="#top"><img src="Media/inu.png" alt="top"></a>
+    <p class="copyright">&copy;ABOUT ME.</p>
+    </div>
+    </footer>
+
+  </body>
+</html>
