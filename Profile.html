@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <title>ABOUT ME.</title>
+
+    <!-- CSS OPEN -->
+    <style type="text/css">
+
+      header 
+      { position: relative;
+        height: 500px;    /**  ↓トップ背景画像↓  **/
+        background: url("Media/sky.JPG")  no-repeat;
+        background-position:left bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden; 
+      }
+
+      header .logo-header 
+      { position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 60%;
+        margin: 0 auto; 
+        background-size: contain;
+      }
+
+      header .fore-img 
+      { position: absolute;
+        top: 335px;
+        left: 80%;
+        width: 600px;
+        height: 200px;
+        margin-left: -480px;/**↓トップフォアイメージ↓**/
+        background-image: url("Media/inu.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        z-index: 1;
+        background-size: contain;
+      }
+
+      @media screen and (max-width: 1000px) 
+        { header .logo-header
+          { top: 45%;
+            width: 70%; }
+        } 
+      @media screen and (max-width: 650px) 
+        { header .logo-header
+          { top: 50%;
+            width: 80%; }
+        } 
+      @media screen and (max-width: 400px) 
+        { header .logo-header
+          { top: 50%;
+            width: 100%; }
+        } 
+      
+
+    </style>
+    <!-- CSS CLOSE -->
+
+  </head>
+  <body>
+
+    <header>
+      
+      <!-- メニューバーOPEN -->
+      <div class="c-header c-hamburger-menu"> <!--↓メニューバーロゴ↓-->
+        <a href="#" class="c-header__logo"><img src="Media/logow.png"></a>
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/>
+        <label for="hamburger" class="c-hamburger-menu__bg"></label>
+        <ul class="c-header__list c-hamburger-menu__list">
+          <li class="c-header__list-item">
+            <a href="AboutMe.html" class="c-header__list-link">Home</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Profile.html" class="c-header__list-link">Profile</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Learned.html" class="c-header__list-link">Learned</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Portfolio.html" class="c-header__list-link">Portfolio</a>
+          </li>
+        </ul>
+        <label for="hamburger" class="c-hamburger-menu__button">
+          <span class="c-hamburger-menu__button-mark"></span>
+          <span class="c-hamburger-menu__button-mark"></span>
+          <span class="c-hamburger-menu__button-mark"></span>
+        </label>
+      </div>
+      <!-- メニューバーCLOSE -->
+
+         <!-- ↓トップロゴ↓ -->
+      <img class="logo-header" src="Media/Profile.png">
+      <div class="fore-img"></div>
+
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="content">
+
+          <h2 class="hp3" align="center">Profile</h2>
+          <div class="flexp">
+            <figure class="image"><img src="Media/me.JPG" alt="Profile"></figure>
+            <div class="right">
+              <p class="text"><b>Name : unnamed</b></p>
+              <p class="text"><b>Gender : Man</b></p>
+              <p class="text"><b>Age : 25</b></p>
+              <p class="text"><b>From : Nagano</b></p>
+            </div>
+          </div>
+
+          <h2 class="yoko0">Hobby</h2>
+          <div class="flex">
+            <p class="hpp">【カフェ巡り☕ᐝ】<br>休日は家で過ごすか、<br>カフェに行くことが多いです。
+              <br>時間があって読書もできる日は最高です。<br>積読が減ると気持ちがいいです📖´-
+            </p>
+            <p class="img-shadow"><img src="Media/cafe.JPG" alt="cafe"></p>
+          </div>
+          <div class="flex">
+            <p class="img-shadow"><img src="Media/cafeore.jpeg" alt="cafeore"></p>
+            <p class="hpp">自分で珈琲やカフェオレ、<br>紅茶を淹れるのも好きです。
+              <br>グラスとマグとコーヒーミルが<br>無限に増えていきます...
+            </p>
+          </div>
+          <div class="flex">
+            <p class="hpp">【ガジェット】<br>ガジェットが好きで、<br>特にApple製品が好きです。<br>
+              機能性とデザイン性に優れた<br>ガジェットを集めるのが好きです。<br>
+            </p>
+            <p class="img-shadow"><img src="Media/ipad.JPG" alt="ipad"></p>
+          </div>
+          <div class="flex">
+            <p class="img-shadow"><img src="Media/camera.JPG" alt="camera"></p>
+            <p class="hpp">綺麗な場所に行く時はカメラを<br>持っていきます。<br>記憶に残るような写真が撮れると<br>嬉しいですよね📷´-<br>
+              おすすめのガジェットに<br>興味のある方はぜひ<br>お気軽にお聞きください！
+            </p>
+          </div>
+          <div class="flex">
+            <p class="hpp">【Game🎮´-】<br>家で過ごしている時は、<br>ゲームをしていることが多いです。<br>
+              幅広いジャンルをプレイするので<br>タイトルは挙げきれないですが<br>ドラクエやマイクラなどは大好きです！<br>
+            </p>
+            <p class="img-shadow"><img src="Media/game.jpg" alt="game"></p>
+          </div>
+          <div class="flex">
+            <p class="img-shadow"><img src="Media/guitar.jpg" alt="guitar"></p>
+            <p class="hpp">【Music🎧´-】<br>米津玄師やヨルシカ、Mrs.が特に好きで<br>
+              ヨルシカのLIVEには毎回行っています。<br>ヨルシカのギター難し過ぎます...
+            </p>
+          </div>
+          <div class="flex">
+            <p class="hpp">【Food＆Alcohol🥂𓈒𓏸︎︎︎︎】<br>料理が好きです。<br>本格的に作った料理はお店の味に<br>勝るとも劣らず、そして経済的です！
+              <br>毎晩、美味しい料理と<br>それに合ったお酒を飲むのが、<br>私流の人生を楽しむコツです！
+            </p>
+            <p class="img-shadow"><img src="Media/pasta.jpg" alt="pasta"></p>
+          </div>
+          <p class="hp3 l" align="center">ーご覧いただき<br class="sp">ありがとうございます！ー</p>
+          <p class="hp m" align="center">以上、私自身の<br class="sp">人となりについての紹介でした！
+            <br>少しでも私に興味を持って<br class="sp">いただけていれば幸いです！<br>
+            <a href="Learned.html" class="link">Learned</a>や
+            <a href="Portfolio.html" class="link">Portfolio</a><br class="sp">ページもぜひご覧ください。</p>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- Javascript OPEN -->
+      <script>
+        var logo = document.querySelector('.logo-header'),
+            foreimg = document.querySelector('.fore-img');
+            window.addEventListener
+            ('scroll', function() 
+              { var scrolled = window.scrollY;
+                logo.style.transform = "translate(0px," + scrolled/2.3 +"%)";
+                foreimg.style.transform = "translate(0px," + scrolled/10 +"%)";
+              }
+            );
+  
+        var forEach = function (array, callback)
+         { for (var i = 0; i < array.length; i++) 
+          { callback.call(null, i, array[i]);}
+         };
+      </script>
+        <!-- Javascript CLOSE -->
+
+
+    <footer>                          <!--↓topボタン↓-->
+    <a class="top" href="#top"><img src="Media/inu.png" alt="top"></a>
+    <p class="copyright">&copy;ABOUT ME.</p>
+    </div>
+    </footer>
+
+  </body>
+</html>
