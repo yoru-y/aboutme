@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <title>ABOUT ME.</title>
+
+    <!-- CSS OPEN -->
+    <style type="text/css">
+
+      header 
+      { position: relative;
+        height: 600px;    /**  ↓トップ背景画像↓  **/
+        background: url("Media/sea2.jpg")  no-repeat;
+        background-position:center left bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden; 
+      }
+
+      header .logo-header 
+      { position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 60%;
+        margin: 0 auto; 
+        background-size: contain;
+      }
+
+      header .fore-img 
+      { position: absolute;
+        top: 200px;
+        left: 80%;
+        width: 960px;
+        height: 733px;
+        margin-left: -480px;    /**  ↓トップフォアイメージ↓  **/
+        background-image: url("Media/ink.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        z-index: 1;
+        background-size: contain;
+      }
+
+      header .back-img
+      { position: absolute;
+        top: 100px;
+        width: 90%;
+        height: 90%;          /**  ↓トップバックイメージ↓  **/
+        background-image: url("Media/coffee.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: contain;
+      }
+
+      @media screen and (max-width: 1000px) 
+        { header .logo-header
+          { top: 45%;
+            width: 70%; }
+        } 
+      @media screen and (max-width: 650px) 
+        { header .logo-header
+          { top: 50%;
+            width: 80%; }
+        } 
+      @media screen and (max-width: 400px) 
+        { header .logo-header
+          { top: 50%;
+            width: 100%; }
+        } 
+      
+      @media screen and (max-width: 1363px) 
+        { header .fore-img 
+          { width: 70%; }
+        } 
+      @media screen and (max-width: 1200px) 
+        { header .fore-img 
+          { top: 100px;
+            left: 100%;
+            height: 820px;
+            margin-left: -600px;
+            width: 60%; }
+        } 
+      @media screen and (max-width: 1120px) 
+        { header .fore-img 
+          { top: 100px;
+            left: 100%;
+            height: 790px;
+            margin-left: -490px;
+            width: 60%; }
+        } 
+      @media screen and (max-width: 1000px) 
+        { header .fore-img 
+          { top: 100px;
+            left: 100%;
+            height: 770px;
+            margin-left: -440px;
+            width: 60%; }
+        } 
+      @media screen and (max-width: 900px) 
+        { header .fore-img 
+          { top: 100px;
+            left: 100%;
+            height: 740px;
+            margin-left: -390px;
+            width: 60%; }
+        } 
+      @media screen and (max-width: 800px) 
+        { header .fore-img 
+          { top: 100px;
+            left: 100%;
+            height: 730px;
+            margin-left: -360px;
+            width: 60%; }
+        } 
+      @media screen and (max-width: 750px ) 
+        { header .fore-img 
+            { top: 100px;
+              left: 100%;
+              height: 700px;
+              margin-left: -330px;
+              width: 60%; }
+        }
+      @media screen and (max-width: 650px ) 
+        { header .fore-img 
+            { top: 100px;
+              left: 100%;
+              height: 680px;
+              margin-left: -300px;
+              width: 60%; }
+        }
+      @media screen and (max-width: 560px ) 
+        { header .fore-img 
+            { top: 100px;
+              left: 100%;
+              height: 660px;
+              margin-left: -260px;
+              width: 60%; }
+        }
+      @media screen and (max-width: 500px ) 
+        { header .fore-img 
+            { top: 100px;
+              left: 100%;
+              height: 630px;
+              margin-left: -220px;
+              width: 60%; }
+        }
+      @media screen and (max-width: 400px ) 
+        { header .fore-img 
+            { top: 100px;
+              left: 100%;
+              height: 600px;
+              margin-left: -190px;
+              width: 60%; }
+        }
+
+        @media screen and (max-width: 1000px) 
+        { header .back-img 
+          { top: 100px;
+            left: -10%;
+            width: 90%;
+            height: 90%; }
+        } 
+        @media screen and (max-width: 650px) 
+        { header .back-img 
+          { top: 170px;
+            left: -20%;
+            width: 90%;
+            height: 90%; }
+        } 
+        @media screen and (max-width: 400px) 
+        { header .back-img 
+          { top: 190px;
+            left: -25%;
+            width: 90%;
+            height: 90%; }
+        } 
+
+    </style>
+    <!-- CSS CLOSE -->
+
+  </head>
+  <body>
+
+    <header>
+      <!-- メニューバーOPEN -->
+      <div class="c-header c-hamburger-menu"> <!--↓メニューバーロゴ↓-->
+        <a href="#" class="c-header__logo"><img src="Media/logow.png"></a>
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/>
+        <label for="hamburger" class="c-hamburger-menu__bg"></label>
+        <ul class="c-header__list c-hamburger-menu__list">
+          <li class="c-header__list-item">
+            <a href="AboutMe.html" class="c-header__list-link">Home</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Profile.html" class="c-header__list-link">Profile</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Learned.html" class="c-header__list-link">Learned</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="Portfolio.html" class="c-header__list-link">Portfolio</a>
+          </li>
+        </ul>
+        <label for="hamburger" class="c-hamburger-menu__button">
+          <span class="c-hamburger-menu__button-mark"></span>
+          <span class="c-hamburger-menu__button-mark"></span>
+          <span class="c-hamburger-menu__button-mark"></span>
+        </label>
+      </div>
+      <!-- メニューバーCLOSE -->
+
+      <!-- ヘッダー背景OPEN -->
+      <div class="back-img"></div>  <!-- ↓トップロゴ↓ -->
+      <img class="logo-header" src="Media/hedlogo.png">
+      <div class="fore-img"></div>
+      <!-- ヘッダー背景CLOSE -->
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="content">
+          <h2 class="hp">Welcome.</h2>
+          <p class="hp">こんにちは！<br>AboutMe.を訪問してくださり<br class="sp">ありがとうございます！<p>
+          <p class="hp">AboutMe.はその名の通り、<br class="sp">皆さんに私を知っていただくために<br class="sp">自己紹介をするサイトです。</p>
+          <p class="hp">下部にて各コンテンツの内容や、<br class="sp">サイト制作にあたっての詳細を<br class="sp">ご紹介させていただきます。
+            <br>宜しければご覧になってください。</p>
+
+          <h2 class="yoko0">About Contents.</h2>
+          <img src="Media/aboutc.PNG" width="100%" height="80%" alt="aboutcontents">
+          <p class="hp">AboutMe.では、自己紹介を<br class="sp">大きく３つのコンテンツに<br class="sp">わけて行っています。</p>
+          <p><a href="Profile.html" class="m link">・Profile - プロフィール</a></p>
+          <p><a href="Learned.html" class="m link">・Learned - 学んだこと</a></p>
+          <p><a href="Portfolio.html" class="m link">・Portfolio - ポートフォリオ</a></p>
+          <p class="hp">この3つがそれぞれどんなコンテンツか<br class="sp">こちらで大まかに<br class="sp">ご紹介させていただきます。</p>
+          <p class="hp">コンテンツの説明が不要な方は、上記<br class="sp">コンテンツ名をクリックしていただくか<br>
+                        ページトップのメニューバーより<br class="sp">ご覧ください。
+          </p>
+          <p class="hp">それでは紹介に入らせていただきます！</p>
+          
+          <h3 class="yokoyoko">Profile</h3>
+          <p class="hp">１つめは私のプロフィールページです！<br>
+            基本的なプロフィールと<br class="sp">趣味についてなど、<br>私の人となりを知っていただくための
+            <br class="sp">ページになっております。
+          </p>
+          <p class="hp">ご興味があればぜひご覧ください。</p>
+          <h3 class="yokoyoko">Learned</h3>
+          <p class="hp">２つめは『学んだこと』についての<br class="sp">ページとなっております。<br>
+            何について学んだことかと言いますと<br>それは私が【ポリテクセンター長野】<br class="sp">
+            さんで学ばせていただいたことについてです。
+          </p>
+          <p class="hp">どのような内容を学ばせていただいたか<br>また私がどのように吸収したかについて
+            <br class="sp">随時まとめを更新させていただきます。
+          </p>
+          <p class="hp">こちらもぜひご覧ください！</p>
+          <h3 class="yokoyoko">Portfolio</h3>
+          <p class="hp">最後の３つめはポートフォリオの<br class="sp">掲載をするページです！<br>
+            私が制作したwebページやデザインなど<br>制作したものについて随時更新させて
+            <br class="sp">いただきますので、<br>お目通しいただけますと幸いです。
+          </p>
+            <hr color="#000000" size="1px" width="80%" align="left" >
+          <p class="hp">以上３つのコンテンツについての<br class="sp">ご紹介でした！
+            <br>閲覧いただきありがとうございます。
+          </p>
+          <p class="hp">それではここからサイト制作に<br class="sp">あたってこだわった点など、
+            <br class="sp">サイトについての詳細に<br class="sp">入らせていただきます！
+          </p>
+          <h2 class="yoko0">Site Details.</h2>
+          <img src="Media/sited.PNG" width="100%" height="80%" alt="Site Details.">
+          <p class="hp">この度、初めて0からサイト制作を<br class="sp">するにあたって意識したポイントや
+            <br class="sp">こだわりポイント。
+            <br>苦戦したことなどを<br class="sp">ご紹介したいと思います！
+          </p>
+          <h3 class="fi">意識したポイント</h3>
+          <p class="hp2"><b>【機能性＆デザイン性重視】</b><br>せっかく作るならクオリティの<br class="sp">
+            高いものを作りたい。<br>そう考えながら<br class="sp">制作に取り掛かりました。
+            <br>見ていて楽しいデザイン性。<br class="sp">デザインだけではなく<br class="sp">見やすい機能性も意識しました。
+          </p>
+            <p class="hp2"><b>【コードの整理整頓】</b><br>今回のwebページ制作は<br class="sp">完全に1人体制での制作ですが、
+              <br>今後チームでの制作をする<br class="sp">場面が来た時のために、<br class="sp">できるだけコードを<br>
+              見やすく整理しながら<br class="sp">書くことを意識しました。
+            </p>
+          <h3 class="fi">大きなこだわりポイント</h3>
+          <p class="hp2"><b>【デザイン】</b><br>このサイト制作に使用している<br class="sp">イラストや写真は全て
+            <br class="sp">私が制作・撮影しています！
+          </p>
+          <p class="hp2"><b>【ヘッダーアニメーション】</b><br>それぞれのオブジェクトが<br class="sp">
+            別々のアニメーションになっていること<br class="sp">はお気付きになりましたか？<br>
+            ページを開いた時の印象を<br class="sp">強く残すために大きく<br class="sp">こだわったポイントです！
+          </p>
+          <p class="hp2"><b>【レスポンシブ対応】</b><br>PCやタブレット、スマートフォンなど<br class="sp">
+            ご覧になる端末に合わせた<br class="sp">デザインの最適化を行いました！<br>
+            PCでご覧になられている方は<br class="sp">windowのサイズを変更して<br class="sp">いただければ画面幅に合わせて
+            <br>デザインや文字列の改行などが変更<br class="sp">されていくのがわかるかと思います！<br class="sp">ぜひお試しください。
+          </p>
+          <h3 class="fi">小さなこだわりポイント</h3>
+          <p class="hp2"><b>【フォント指定】</b><br>基本はWebフォントが表示される<br class="sp">
+            ようにしていますが、<br class="sp">何らかの理由で表示<br class="sp">できなかった時のために<br>
+            各OS標準のフォントも<br class="sp">デザインを選び指定しています。
+          </p>
+          <p class="hp2"><b>【ハンバーガーメニュー】</b><br>PCの画面幅では表示されませんが、<br class="sp">
+            スマートフォンなどの画面幅になると<br class="sp">メニューを折りたたみ<br>ハンバーガーメニューが
+            <br class="sp">表示されるようにしました。
+          </p>
+          <p class="hp2"><b>【一番上に連れて行ってくれるイッヌ】</b><br>ページ最下部までスクロールすると、<br class="sp">
+            左下にタップorクリックで<br class="sp">画面一番上まで連れて行ってくれる<br>イッヌが登場するようにしました。<br class="sp">
+            ヌルっと連れて行ってくれるのも<br class="sp">こだわりポイントです。
+          </p>
+          <p class="hp2"><b>【ファビコンにもイッヌ】</b><br>ひっそりとファビコンもイッヌ<br class="sp">にしています！</p>
+          <h3 class="fi">苦戦したこと</h3>
+          <p class="hp2"><b>【ヘッダーのアニメーション＆配置】</b><br>・思うように動かない。
+            <br>・オブジェクトの配置が難しい<br>各画面幅でこの２つの設定を<br class="sp">することは苦戦しました。</p>
+          <p class="hp2"><b>【ハンバーガーメニューの配置と影】</b><br>ハンバーガーメニューをホバーした際に<br class="sp">
+            メニューアイコンに影ができる<br class="sp">こだわりを追加しているのですが...<br>
+            box-shadowが使えない作りに<br class="sp">なっているため、苦戦しました。<br>そしてハンバーガーメニュー自体も
+            <br class="sp">真ん中に配置されてしまったりと<br class="sp">配置に苦戦しました。
+          </p>
+
+          <h2 class="mat">まとめ</h2>
+          <p class="hp">苦戦したこととして述べたものも<br class="sp">そうでないものも、コツを<br class="sp">
+            掴むまでは試行錯誤の繰り返しでした。<br>今思えば全て、何故あんなに<br class="sp">時間を使っていたのだろう
+            <br class="sp">と思うような内容ばかりです。
+            <br>ですが、その時間のおかげで<br class="sp">"問題に直面した時の乗り越え方"<br class="sp">を身に着けられました。
+            <br>この自己紹介ページを作るという<br class="sp">課題に取り組むことで<br class="sp">
+            得られたこの経験は<br>今後のお仕事に必ず役に立つと<br class="sp">強く感じています。<br>
+            それでは、左下のイッヌをクリックして<br class="sp">上部までお戻りください！<br>
+            ご覧いただきありがとうございました！
+          </p>
+        </div>
+      </div>
+    </section>
+
+      <!-- Javascript OPEN -->
+    <script>
+      var logo = document.querySelector('.logo-header'),
+          blurredimg = document.querySelector('.back-img'),
+          foreimg = document.querySelector('.fore-img');
+          window.addEventListener
+          ('scroll', function() 
+            { var scrolled = window.scrollY;
+              logo.style.transform = "translate(0px," + scrolled/1 +"%)";
+              blurredimg.style.transform = "translate(0px," + scrolled/10 +"%)";
+              foreimg.style.transform = "translate(0px,-" + scrolled/80 +"%)";
+            }
+          );
+
+      var forEach = function (array, callback)
+       { for (var i = 0; i < array.length; i++) 
+        { callback.call(null, i, array[i]);}
+       };
+    </script>
+      <!-- Javascript CLOSE -->
+
+
+
+
+    <footer>                          <!--↓topボタン↓-->
+    <a class="top" href="#top"><img src="Media/inu.png" alt="top"></a>
+    <p class="copyright">&copy;ABOUT ME.</p>
+    </div>
+    </footer>
+
+  </body>
+</html>
